@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+         * {
+            /* margin: 0; */
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #0d0d0d;
+            color: white;
+            padding: 40px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            color: #aaa;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a.home,
+        nav a:hover {
+            color: #ff7b00;
+        }
+
+        .btn-orange {
+            background: #ff7b00;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-orange:hover {
+            background: white;
+            color: #ff7b00;
+            /* border: 1px solid #ff7b00;  */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .left {
+            max-width: 50%;
+        }
+
+        .left h4 {
+            color: #999;
+            margin-bottom: 5px;
+        }
+
+        .left h2 {
+            font-size: 48px;
+            color: #ff7b00;
+            margin: 10px 0;
+        }
+
+        .left span {
+            color: white;
+        }
+
+        .socials i {
+            font-size: 18px;
+            margin-right: 15px;
+            color: #ccc;
+            cursor: pointer;
+            transition: all 0.3s ease, color 0.3s ease;
+            /* margin: 5px; */
+        }
+
+        .socials i:hover {
+            transform: scale(1.3);
+            color: #ff7b00;
+        }
+
+        .buttons {
+            margin: 30px;
+            margin-left: 0px;
+        }
+
+        .buttons button {
+            margin-right: 15px;
+        }
+
+        .cv-button {
+            display: inline-block;
+            padding: 7px 20px;
+            color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cv-button:hover {
+            background-color: #ff7b00;
+            border-color: #ff7b00;
+            color: white;
+        }
+
+        .stats {
+            display: flex;
+            gap: 20px;
+        }
+
+        .stat-box {
+            background: #1a1a1a;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-box h3 {
+            color: #ff7b00;
+        }
+
+        .right img {
+            border-radius: 50%;
+            max-width: 400px;
+            filter: grayscale(100);
+            margin-top: 100px;
+            margin-right: 100px;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .left,
+            .right {
+                max-width: 100%;
+            }
+
+            .right img {
+                width: 60%;
+            }
+        }
+     </style>
+</head>
+
+<body>
+    <header>
+        <div style="color: #ff7b00; font-weight: bold; font-size: 20px;">PORTFOLIO</div>
+        <nav>
+            <a href="#" class="home">Home</a>
+            <a href="#">About me</a>
+            <a href="#">Services</a>
+            <!-- <a href="#">Portfolio</a> -->
+            <a href="#">Contact me</a>
+        </nav>
+        <button class="btn-orange">Hire Me</button>
+    </header>
+
+    <div class="container">
+        <div class="left">
+            <h4>Hi I am</h4>
+            <h3 style="font-size: 20px;">Subhojeet Manna</h3>
+            <h2><span>Front-end</span> Developer</h2>
+            <div class="socials">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="buttons">
+                <button class="btn-orange">Hire Me</button>
+
+                <a href="/cv.html" class="cv-button" download>Download CV</a>
+
+            </div>
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>+</h3>
+                    <p>Experiences</p>
+                </div>
+                <div class="stat-box">
+                    <h3>+</h3>
+                    <p>Project done</p>
+                </div>
+                <div class="stat-box">
+                    <h3>+</h3>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="profile photo.jpg" alt="Profile">
+        </div>
+    </div>
+</body>
+
+</html>
